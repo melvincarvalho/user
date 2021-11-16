@@ -370,6 +370,22 @@
         "http://www.w3.org/2003/06/sw-vocab-status/ns#term_status": "archaic"
       },
       {
+        "@id": "https://w3id.org/user/github",
+        "@type": [
+          "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property",
+          "http://www.w3.org/2002/07/owl#ObjectProperty"
+        ],
+        "http://www.w3.org/2000/01/rdf-schema#comment": "Indicates a github profile for this agent.",
+        "http://www.w3.org/2000/01/rdf-schema#domain": {
+          "@id": "https://w3id.org/user/Agent"
+        },
+        "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": {
+          "@id": "https://w3id.org/user/"
+        },
+        "http://www.w3.org/2000/01/rdf-schema#label": "github",
+        "http://www.w3.org/2003/06/sw-vocab-status/ns#term_status": "testing"
+      },
+      {
         "@id": "https://w3id.org/user/homepage",
         "@type": [
           "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property",
