@@ -37,7 +37,7 @@
           {
             "@id": "http://xmlns.com/foaf/0.1/Project"
           }
-        ],
+        ]
       },
       {
         "@id": "http://xmlns.com/foaf/0.1/Group",
