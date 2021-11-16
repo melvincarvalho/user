@@ -1,731 +1,729 @@
-{
-    "@graph": [
-      {
+[
+    {
         "@id": "https://w3id.org/user/",
         "@type": "http://www.w3.org/2002/07/owl#Ontology",
         "http://purl.org/dc/elements/1.1/description": "User vocabulary.",
         "http://purl.org/dc/elements/1.1/title": "User vocabulary"
-      },
-      {
+    },
+    {
         "@id": "https://w3id.org/user/Agent",
         "@type": [
-          "http://www.w3.org/2000/01/rdf-schema#Class",
-          "http://www.w3.org/2002/07/owl#Class"
+            "http://www.w3.org/2000/01/rdf-schema#Class",
+            "http://www.w3.org/2002/07/owl#Class"
         ],
         "http://www.w3.org/2000/01/rdf-schema#comment": "An agent (eg. person, group, software or physical artifact).",
         "http://www.w3.org/2000/01/rdf-schema#label": "Agent",
         "http://www.w3.org/2002/07/owl#equivalentClass": {
-          "@id": "http://purl.org/dc/terms/Agent"
+            "@id": "http://purl.org/dc/terms/Agent"
         },
         "http://www.w3.org/2003/06/sw-vocab-status/ns#term_status": "stable"
-      },
-      {
+    },
+    {
         "@id": "https://w3id.org/user/Document",
         "@type": [
-          "http://www.w3.org/2000/01/rdf-schema#Class",
-          "http://www.w3.org/2002/07/owl#Class"
+            "http://www.w3.org/2000/01/rdf-schema#Class",
+            "http://www.w3.org/2002/07/owl#Class"
         ],
         "http://www.w3.org/2000/01/rdf-schema#comment": "A document.",
         "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": {
-          "@id": "https://w3id.org/user/"
+            "@id": "https://w3id.org/user/"
         },
         "http://www.w3.org/2000/01/rdf-schema#label": "Document",
         "http://www.w3.org/2002/07/owl#disjointWith": [
-          {
-            "@id": "https://w3id.org/user/Organization"
-          },
-          {
-            "@id": "https://w3id.org/user/Project"
-          }
+            {
+                "@id": "https://w3id.org/user/Organization"
+            },
+            {
+                "@id": "https://w3id.org/user/Project"
+            }
         ]
-      },
-      {
+    },
+    {
         "@id": "https://w3id.org/user/Group",
         "@type": [
-          "http://www.w3.org/2000/01/rdf-schema#Class",
-          "http://www.w3.org/2002/07/owl#Class"
+            "http://www.w3.org/2000/01/rdf-schema#Class",
+            "http://www.w3.org/2002/07/owl#Class"
         ],
         "http://www.w3.org/2000/01/rdf-schema#comment": "A class of Agents.",
         "http://www.w3.org/2000/01/rdf-schema#label": "Group",
         "http://www.w3.org/2000/01/rdf-schema#subClassOf": {
-          "@id": "https://w3id.org/user/Agent"
+            "@id": "https://w3id.org/user/Agent"
         },
         "http://www.w3.org/2003/06/sw-vocab-status/ns#term_status": "stable"
-      },
-      {
+    },
+    {
         "@id": "https://w3id.org/user/Image",
         "@type": [
-          "http://www.w3.org/2000/01/rdf-schema#Class",
-          "http://www.w3.org/2002/07/owl#Class"
+            "http://www.w3.org/2000/01/rdf-schema#Class",
+            "http://www.w3.org/2002/07/owl#Class"
         ],
         "http://www.w3.org/2000/01/rdf-schema#comment": "An image.",
         "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": {
-          "@id": "https://w3id.org/user/"
+            "@id": "https://w3id.org/user/"
         },
         "http://www.w3.org/2000/01/rdf-schema#label": "Image",
         "http://www.w3.org/2000/01/rdf-schema#subClassOf": {
-          "@id": "https://w3id.org/user/Document"
+            "@id": "https://w3id.org/user/Document"
         },
         "http://www.w3.org/2002/07/owl#equivalentClass": {
-          "@id": "http://schema.org/ImageObject"
+            "@id": "http://schema.org/ImageObject"
         },
         "http://www.w3.org/2003/06/sw-vocab-status/ns#term_status": "stable"
-      },
-      {
+    },
+    {
         "@id": "https://w3id.org/user/LabelProperty",
         "@type": [
-          "http://www.w3.org/2000/01/rdf-schema#Class",
-          "http://www.w3.org/2002/07/owl#Class"
+            "http://www.w3.org/2000/01/rdf-schema#Class",
+            "http://www.w3.org/2002/07/owl#Class"
         ],
         "http://www.w3.org/2000/01/rdf-schema#comment": "A foaf:LabelProperty is any RDF property with texual values that serve as labels.",
         "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": {
-          "@id": "https://w3id.org/user/"
+            "@id": "https://w3id.org/user/"
         },
         "http://www.w3.org/2000/01/rdf-schema#label": "Label Property",
         "http://www.w3.org/2003/06/sw-vocab-status/ns#term_status": "unstable"
-      },
-      {
+    },
+    {
         "@id": "https://w3id.org/user/OnlineAccount",
         "@type": [
-          "http://www.w3.org/2000/01/rdf-schema#Class",
-          "http://www.w3.org/2002/07/owl#Class"
+            "http://www.w3.org/2000/01/rdf-schema#Class",
+            "http://www.w3.org/2002/07/owl#Class"
         ],
         "http://www.w3.org/2000/01/rdf-schema#comment": "An online account.",
         "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": {
-          "@id": "https://w3id.org/user/"
+            "@id": "https://w3id.org/user/"
         },
         "http://www.w3.org/2000/01/rdf-schema#label": "Online Account",
         "http://www.w3.org/2000/01/rdf-schema#subClassOf": {
-          "@id": "http://www.w3.org/2002/07/owl#Thing"
+            "@id": "http://www.w3.org/2002/07/owl#Thing"
         },
         "http://www.w3.org/2003/06/sw-vocab-status/ns#term_status": "testing"
-      },
-      {
+    },
+    {
         "@id": "https://w3id.org/user/Organization",
         "@type": [
-          "http://www.w3.org/2000/01/rdf-schema#Class",
-          "http://www.w3.org/2002/07/owl#Class"
+            "http://www.w3.org/2000/01/rdf-schema#Class",
+            "http://www.w3.org/2002/07/owl#Class"
         ],
         "http://www.w3.org/2000/01/rdf-schema#comment": "An organization.",
         "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": {
-          "@id": "https://w3id.org/user/"
+            "@id": "https://w3id.org/user/"
         },
         "http://www.w3.org/2000/01/rdf-schema#label": "Organization",
         "http://www.w3.org/2000/01/rdf-schema#subClassOf": {
-          "@id": "https://w3id.org/user/Agent"
+            "@id": "https://w3id.org/user/Agent"
         },
         "http://www.w3.org/2002/07/owl#disjointWith": [
-          {
-            "@id": "https://w3id.org/user/Document"
-          },
-          {
-            "@id": "https://w3id.org/user/Person"
-          }
+            {
+                "@id": "https://w3id.org/user/Document"
+            },
+            {
+                "@id": "https://w3id.org/user/Person"
+            }
         ],
         "http://www.w3.org/2003/06/sw-vocab-status/ns#term_status": "stable"
-      },
-      {
+    },
+    {
         "@id": "https://w3id.org/user/Person",
         "@type": [
-          "http://www.w3.org/2000/01/rdf-schema#Class",
-          "http://www.w3.org/2002/07/owl#Class"
+            "http://www.w3.org/2000/01/rdf-schema#Class",
+            "http://www.w3.org/2002/07/owl#Class"
         ],
         "http://www.w3.org/2000/01/rdf-schema#comment": "A person.",
         "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": {
-          "@id": "https://w3id.org/user/"
+            "@id": "https://w3id.org/user/"
         },
         "http://www.w3.org/2000/01/rdf-schema#label": "Person",
         "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
-          {
-            "@id": "http://www.w3.org/2003/01/geo/wgs84_pos#SpatialThing"
-          },
-          {
-            "@id": "https://w3id.org/user/Agent"
-          }
+            {
+                "@id": "http://www.w3.org/2003/01/geo/wgs84_pos#SpatialThing"
+            },
+            {
+                "@id": "https://w3id.org/user/Agent"
+            }
         ],
         "http://www.w3.org/2002/07/owl#disjointWith": [
-          {
-            "@id": "https://w3id.org/user/Organization"
-          },
-          {
-            "@id": "https://w3id.org/user/Project"
-          }
+            {
+                "@id": "https://w3id.org/user/Organization"
+            },
+            {
+                "@id": "https://w3id.org/user/Project"
+            }
         ],
         "http://www.w3.org/2002/07/owl#equivalentClass": [
-          {
-            "@id": "http://schema.org/Person"
-          },
-          {
-            "@id": "http://www.w3.org/2000/10/swap/pim/contact#Person"
-          }
+            {
+                "@id": "http://schema.org/Person"
+            },
+            {
+                "@id": "http://www.w3.org/2000/10/swap/pim/contact#Person"
+            }
         ],
         "http://www.w3.org/2003/06/sw-vocab-status/ns#term_status": "stable"
-      },
-      {
+    },
+    {
         "@id": "https://w3id.org/user/PersonalProfileDocument",
         "@type": [
-          "http://www.w3.org/2000/01/rdf-schema#Class",
-          "http://www.w3.org/2002/07/owl#Class"
+            "http://www.w3.org/2000/01/rdf-schema#Class",
+            "http://www.w3.org/2002/07/owl#Class"
         ],
         "http://www.w3.org/2000/01/rdf-schema#comment": "A personal profile RDF document.",
         "http://www.w3.org/2000/01/rdf-schema#label": "PersonalProfileDocument",
         "http://www.w3.org/2000/01/rdf-schema#subClassOf": {
-          "@id": "https://w3id.org/user/Document"
+            "@id": "https://w3id.org/user/Document"
         },
         "http://www.w3.org/2003/06/sw-vocab-status/ns#term_status": "testing"
-      },
-      {
+    },
+    {
         "@id": "https://w3id.org/user/Project",
         "@type": [
-          "http://www.w3.org/2000/01/rdf-schema#Class",
-          "http://www.w3.org/2002/07/owl#Class"
+            "http://www.w3.org/2000/01/rdf-schema#Class",
+            "http://www.w3.org/2002/07/owl#Class"
         ],
         "http://www.w3.org/2000/01/rdf-schema#comment": "A project (a collective endeavour of some kind).",
         "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": {
-          "@id": "https://w3id.org/user/"
+            "@id": "https://w3id.org/user/"
         },
         "http://www.w3.org/2000/01/rdf-schema#label": "Project",
         "http://www.w3.org/2002/07/owl#disjointWith": [
-          {
-            "@id": "https://w3id.org/user/Document"
-          },
-          {
-            "@id": "https://w3id.org/user/Person"
-          }
+            {
+                "@id": "https://w3id.org/user/Document"
+            },
+            {
+                "@id": "https://w3id.org/user/Person"
+            }
         ],
         "http://www.w3.org/2003/06/sw-vocab-status/ns#term_status": "testing"
-      },
-      {
+    },
+    {
         "@id": "https://w3id.org/user/account",
         "@type": [
-          "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property",
-          "http://www.w3.org/2002/07/owl#ObjectProperty"
+            "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property",
+            "http://www.w3.org/2002/07/owl#ObjectProperty"
         ],
         "http://www.w3.org/2000/01/rdf-schema#comment": "Indicates an account held by this agent.",
         "http://www.w3.org/2000/01/rdf-schema#domain": {
-          "@id": "https://w3id.org/user/Agent"
+            "@id": "https://w3id.org/user/Agent"
         },
         "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": {
-          "@id": "https://w3id.org/user/"
+            "@id": "https://w3id.org/user/"
         },
         "http://www.w3.org/2000/01/rdf-schema#label": "account",
         "http://www.w3.org/2000/01/rdf-schema#range": {
-          "@id": "https://w3id.org/user/OnlineAccount"
+            "@id": "https://w3id.org/user/OnlineAccount"
         },
         "http://www.w3.org/2003/06/sw-vocab-status/ns#term_status": "testing"
-      },
-      {
+    },
+    {
         "@id": "https://w3id.org/user/age",
         "@type": [
-          "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property",
-          "http://www.w3.org/2002/07/owl#DatatypeProperty",
-          "http://www.w3.org/2002/07/owl#FunctionalProperty"
+            "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property",
+            "http://www.w3.org/2002/07/owl#DatatypeProperty",
+            "http://www.w3.org/2002/07/owl#FunctionalProperty"
         ],
         "http://www.w3.org/2000/01/rdf-schema#comment": "The age in years of some agent.",
         "http://www.w3.org/2000/01/rdf-schema#domain": {
-          "@id": "https://w3id.org/user/Agent"
+            "@id": "https://w3id.org/user/Agent"
         },
         "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": {
-          "@id": "https://w3id.org/user/"
+            "@id": "https://w3id.org/user/"
         },
         "http://www.w3.org/2000/01/rdf-schema#label": "age",
         "http://www.w3.org/2000/01/rdf-schema#range": {
-          "@id": "http://www.w3.org/2000/01/rdf-schema#Literal"
+            "@id": "http://www.w3.org/2000/01/rdf-schema#Literal"
         },
         "http://www.w3.org/2003/06/sw-vocab-status/ns#term_status": "unstable"
-      },
-      {
+    },
+    {
         "@id": "https://w3id.org/user/based_near",
         "@type": [
-          "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property",
-          "http://www.w3.org/2002/07/owl#ObjectProperty"
+            "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property",
+            "http://www.w3.org/2002/07/owl#ObjectProperty"
         ],
         "http://www.w3.org/2000/01/rdf-schema#comment": "A location that something is based near, for some broadly human notion of near.",
         "http://www.w3.org/2000/01/rdf-schema#domain": {
-          "@id": "http://www.w3.org/2003/01/geo/wgs84_pos#SpatialThing"
+            "@id": "http://www.w3.org/2003/01/geo/wgs84_pos#SpatialThing"
         },
         "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": {
-          "@id": "https://w3id.org/user/"
+            "@id": "https://w3id.org/user/"
         },
         "http://www.w3.org/2000/01/rdf-schema#label": "based near",
         "http://www.w3.org/2000/01/rdf-schema#range": {
-          "@id": "http://www.w3.org/2003/01/geo/wgs84_pos#SpatialThing"
+            "@id": "http://www.w3.org/2003/01/geo/wgs84_pos#SpatialThing"
         },
         "http://www.w3.org/2003/06/sw-vocab-status/ns#term_status": "testing"
-      },
-      {
+    },
+    {
         "@id": "https://w3id.org/user/birthday",
         "@type": [
-          "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property",
-          "http://www.w3.org/2002/07/owl#DatatypeProperty",
-          "http://www.w3.org/2002/07/owl#FunctionalProperty"
+            "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property",
+            "http://www.w3.org/2002/07/owl#DatatypeProperty",
+            "http://www.w3.org/2002/07/owl#FunctionalProperty"
         ],
         "http://www.w3.org/2000/01/rdf-schema#comment": "The birthday of this Agent, represented in mm-dd string form, eg. '12-31'.",
         "http://www.w3.org/2000/01/rdf-schema#domain": {
-          "@id": "https://w3id.org/user/Agent"
+            "@id": "https://w3id.org/user/Agent"
         },
         "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": {
-          "@id": "https://w3id.org/user/"
+            "@id": "https://w3id.org/user/"
         },
         "http://www.w3.org/2000/01/rdf-schema#label": "birthday",
         "http://www.w3.org/2000/01/rdf-schema#range": {
-          "@id": "http://www.w3.org/2000/01/rdf-schema#Literal"
+            "@id": "http://www.w3.org/2000/01/rdf-schema#Literal"
         },
         "http://www.w3.org/2003/06/sw-vocab-status/ns#term_status": "unstable"
-      },
-      {
+    },
+    {
         "@id": "https://w3id.org/user/currentProject",
         "@type": [
-          "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property",
-          "http://www.w3.org/2002/07/owl#ObjectProperty"
+            "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property",
+            "http://www.w3.org/2002/07/owl#ObjectProperty"
         ],
         "http://www.w3.org/2000/01/rdf-schema#comment": "A current project this person works on.",
         "http://www.w3.org/2000/01/rdf-schema#domain": {
-          "@id": "https://w3id.org/user/Person"
+            "@id": "https://w3id.org/user/Person"
         },
         "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": {
-          "@id": "https://w3id.org/user/"
+            "@id": "https://w3id.org/user/"
         },
         "http://www.w3.org/2000/01/rdf-schema#label": "current project",
         "http://www.w3.org/2000/01/rdf-schema#range": {
-          "@id": "http://www.w3.org/2002/07/owl#Thing"
+            "@id": "http://www.w3.org/2002/07/owl#Thing"
         },
         "http://www.w3.org/2003/06/sw-vocab-status/ns#term_status": "testing"
-      },
-      {
+    },
+    {
         "@id": "https://w3id.org/user/depiction",
         "@type": [
-          "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property",
-          "http://www.w3.org/2002/07/owl#ObjectProperty"
+            "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property",
+            "http://www.w3.org/2002/07/owl#ObjectProperty"
         ],
         "http://www.w3.org/2000/01/rdf-schema#comment": "A depiction of some thing.",
         "http://www.w3.org/2000/01/rdf-schema#domain": {
-          "@id": "http://www.w3.org/2002/07/owl#Thing"
+            "@id": "http://www.w3.org/2002/07/owl#Thing"
         },
         "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": {
-          "@id": "https://w3id.org/user/"
+            "@id": "https://w3id.org/user/"
         },
         "http://www.w3.org/2000/01/rdf-schema#label": "depiction",
         "http://www.w3.org/2000/01/rdf-schema#range": {
-          "@id": "https://w3id.org/user/Image"
+            "@id": "https://w3id.org/user/Image"
         },
         "http://www.w3.org/2002/07/owl#inverseOf": {
-          "@id": "https://w3id.org/user/depicts"
+            "@id": "https://w3id.org/user/depicts"
         },
         "http://www.w3.org/2003/06/sw-vocab-status/ns#term_status": "testing"
-      },
-      {
+    },
+    {
         "@id": "https://w3id.org/user/depicts",
         "@type": [
-          "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property",
-          "http://www.w3.org/2002/07/owl#ObjectProperty"
+            "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property",
+            "http://www.w3.org/2002/07/owl#ObjectProperty"
         ],
         "http://www.w3.org/2000/01/rdf-schema#comment": "A thing depicted in this representation.",
         "http://www.w3.org/2000/01/rdf-schema#domain": {
-          "@id": "https://w3id.org/user/Image"
+            "@id": "https://w3id.org/user/Image"
         },
         "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": {
-          "@id": "https://w3id.org/user/"
+            "@id": "https://w3id.org/user/"
         },
         "http://www.w3.org/2000/01/rdf-schema#label": "depicts",
         "http://www.w3.org/2000/01/rdf-schema#range": {
-          "@id": "http://www.w3.org/2002/07/owl#Thing"
+            "@id": "http://www.w3.org/2002/07/owl#Thing"
         },
         "http://www.w3.org/2002/07/owl#inverseOf": {
-          "@id": "https://w3id.org/user/depiction"
+            "@id": "https://w3id.org/user/depiction"
         },
         "http://www.w3.org/2003/06/sw-vocab-status/ns#term_status": "testing"
-      },
-      {
+    },
+    {
         "@id": "https://w3id.org/user/gender",
         "@type": [
-          "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property",
-          "http://www.w3.org/2002/07/owl#DatatypeProperty",
-          "http://www.w3.org/2002/07/owl#FunctionalProperty"
+            "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property",
+            "http://www.w3.org/2002/07/owl#DatatypeProperty",
+            "http://www.w3.org/2002/07/owl#FunctionalProperty"
         ],
         "http://www.w3.org/2000/01/rdf-schema#comment": "The gender of this Agent (typically but not necessarily 'male' or 'female').",
         "http://www.w3.org/2000/01/rdf-schema#domain": {
-          "@id": "https://w3id.org/user/Agent"
+            "@id": "https://w3id.org/user/Agent"
         },
         "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": {
-          "@id": "https://w3id.org/user/"
+            "@id": "https://w3id.org/user/"
         },
         "http://www.w3.org/2000/01/rdf-schema#label": "gender",
         "http://www.w3.org/2000/01/rdf-schema#range": {
-          "@id": "http://www.w3.org/2000/01/rdf-schema#Literal"
+            "@id": "http://www.w3.org/2000/01/rdf-schema#Literal"
         },
         "http://www.w3.org/2003/06/sw-vocab-status/ns#term_status": "testing"
-      },
-      {
+    },
+    {
         "@id": "https://w3id.org/user/givenname",
         "@type": [
-          "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property",
-          "http://www.w3.org/2002/07/owl#DatatypeProperty"
+            "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property",
+            "http://www.w3.org/2002/07/owl#DatatypeProperty"
         ],
         "http://www.w3.org/2000/01/rdf-schema#comment": "The given name of some person.",
         "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": {
-          "@id": "https://w3id.org/user/"
+            "@id": "https://w3id.org/user/"
         },
         "http://www.w3.org/2000/01/rdf-schema#label": "Given name",
         "http://www.w3.org/2003/06/sw-vocab-status/ns#term_status": "archaic"
-      },
-      {
+    },
+    {
         "@id": "https://w3id.org/user/github",
         "@type": [
-          "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property",
-          "http://www.w3.org/2002/07/owl#ObjectProperty"
+            "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property",
+            "http://www.w3.org/2002/07/owl#ObjectProperty"
         ],
         "http://www.w3.org/2000/01/rdf-schema#comment": "Indicates a github profile for this agent.",
         "http://www.w3.org/2000/01/rdf-schema#domain": {
-          "@id": "https://w3id.org/user/Agent"
+            "@id": "https://w3id.org/user/Agent"
         },
         "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": {
-          "@id": "https://w3id.org/user/"
+            "@id": "https://w3id.org/user/"
         },
         "http://www.w3.org/2000/01/rdf-schema#label": "github",
         "http://www.w3.org/2003/06/sw-vocab-status/ns#term_status": "testing"
-      },
-      {
+    },
+    {
         "@id": "https://w3id.org/user/homepage",
         "@type": [
-          "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property",
-          "http://www.w3.org/2002/07/owl#InverseFunctionalProperty",
-          "http://www.w3.org/2002/07/owl#ObjectProperty"
+            "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property",
+            "http://www.w3.org/2002/07/owl#InverseFunctionalProperty",
+            "http://www.w3.org/2002/07/owl#ObjectProperty"
         ],
         "http://www.w3.org/2000/01/rdf-schema#comment": "A homepage for some thing.",
         "http://www.w3.org/2000/01/rdf-schema#domain": {
-          "@id": "http://www.w3.org/2002/07/owl#Thing"
+            "@id": "http://www.w3.org/2002/07/owl#Thing"
         },
         "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": {
-          "@id": "https://w3id.org/user/"
+            "@id": "https://w3id.org/user/"
         },
         "http://www.w3.org/2000/01/rdf-schema#label": "homepage",
         "http://www.w3.org/2000/01/rdf-schema#range": {
-          "@id": "https://w3id.org/user/Document"
+            "@id": "https://w3id.org/user/Document"
         },
         "http://www.w3.org/2000/01/rdf-schema#subPropertyOf": [
-          {
-            "@id": "https://w3id.org/user/isPrimaryTopicOf"
-          },
-          {
-            "@id": "https://w3id.org/user/page"
-          }
+            {
+                "@id": "https://w3id.org/user/isPrimaryTopicOf"
+            },
+            {
+                "@id": "https://w3id.org/user/page"
+            }
         ],
         "http://www.w3.org/2003/06/sw-vocab-status/ns#term_status": "stable"
-      },
-      {
+    },
+    {
         "@id": "https://w3id.org/user/img",
         "@type": [
-          "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property",
-          "http://www.w3.org/2002/07/owl#ObjectProperty"
+            "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property",
+            "http://www.w3.org/2002/07/owl#ObjectProperty"
         ],
         "http://www.w3.org/2000/01/rdf-schema#comment": "An image that can be used to represent some thing (ie. those depictions which are particularly representative of something, eg. one's photo on a homepage).",
         "http://www.w3.org/2000/01/rdf-schema#domain": {
-          "@id": "https://w3id.org/user/Person"
+            "@id": "https://w3id.org/user/Person"
         },
         "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": {
-          "@id": "https://w3id.org/user/"
+            "@id": "https://w3id.org/user/"
         },
         "http://www.w3.org/2000/01/rdf-schema#label": "image",
         "http://www.w3.org/2000/01/rdf-schema#range": {
-          "@id": "https://w3id.org/user/Image"
+            "@id": "https://w3id.org/user/Image"
         },
         "http://www.w3.org/2000/01/rdf-schema#subPropertyOf": {
-          "@id": "https://w3id.org/user/depiction"
+            "@id": "https://w3id.org/user/depiction"
         },
         "http://www.w3.org/2003/06/sw-vocab-status/ns#term_status": "testing"
-      },
-      {
+    },
+    {
         "@id": "https://w3id.org/user/interest",
         "@type": [
-          "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property",
-          "http://www.w3.org/2002/07/owl#ObjectProperty"
+            "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property",
+            "http://www.w3.org/2002/07/owl#ObjectProperty"
         ],
         "http://www.w3.org/2000/01/rdf-schema#comment": "A page about a topic of interest to this person.",
         "http://www.w3.org/2000/01/rdf-schema#domain": {
-          "@id": "https://w3id.org/user/Agent"
+            "@id": "https://w3id.org/user/Agent"
         },
         "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": {
-          "@id": "https://w3id.org/user/"
+            "@id": "https://w3id.org/user/"
         },
         "http://www.w3.org/2000/01/rdf-schema#label": "interest",
         "http://www.w3.org/2000/01/rdf-schema#range": {
-          "@id": "https://w3id.org/user/Document"
+            "@id": "https://w3id.org/user/Document"
         },
         "http://www.w3.org/2003/06/sw-vocab-status/ns#term_status": "testing"
-      },
-      {
+    },
+    {
         "@id": "https://w3id.org/user/knows",
         "@type": [
-          "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property",
-          "http://www.w3.org/2002/07/owl#ObjectProperty"
+            "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property",
+            "http://www.w3.org/2002/07/owl#ObjectProperty"
         ],
         "http://www.w3.org/2000/01/rdf-schema#comment": "A person known by this person (indicating some level of reciprocated interaction between the parties).",
         "http://www.w3.org/2000/01/rdf-schema#domain": {
-          "@id": "https://w3id.org/user/Person"
+            "@id": "https://w3id.org/user/Person"
         },
         "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": {
-          "@id": "https://w3id.org/user/"
+            "@id": "https://w3id.org/user/"
         },
         "http://www.w3.org/2000/01/rdf-schema#label": "knows",
         "http://www.w3.org/2000/01/rdf-schema#range": {
-          "@id": "https://w3id.org/user/Person"
+            "@id": "https://w3id.org/user/Person"
         },
         "http://www.w3.org/2003/06/sw-vocab-status/ns#term_status": "stable"
-      },
-      {
+    },
+    {
         "@id": "https://w3id.org/user/maker",
         "@type": [
-          "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property",
-          "http://www.w3.org/2002/07/owl#ObjectProperty"
+            "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property",
+            "http://www.w3.org/2002/07/owl#ObjectProperty"
         ],
         "http://www.w3.org/2000/01/rdf-schema#comment": "An agent that  made this thing.",
         "http://www.w3.org/2000/01/rdf-schema#domain": {
-          "@id": "http://www.w3.org/2002/07/owl#Thing"
+            "@id": "http://www.w3.org/2002/07/owl#Thing"
         },
         "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": {
-          "@id": "https://w3id.org/user/"
+            "@id": "https://w3id.org/user/"
         },
         "http://www.w3.org/2000/01/rdf-schema#label": "maker",
         "http://www.w3.org/2000/01/rdf-schema#range": {
-          "@id": "https://w3id.org/user/Agent"
+            "@id": "https://w3id.org/user/Agent"
         },
         "http://www.w3.org/2002/07/owl#equivalentProperty": {
-          "@id": "http://purl.org/dc/terms/creator"
+            "@id": "http://purl.org/dc/terms/creator"
         },
         "http://www.w3.org/2002/07/owl#inverseOf": {
-          "@id": "https://w3id.org/user/made"
+            "@id": "https://w3id.org/user/made"
         },
         "http://www.w3.org/2003/06/sw-vocab-status/ns#term_status": "stable"
-      },
-      {
+    },
+    {
         "@id": "https://w3id.org/user/mbox",
         "@type": [
-          "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property",
-          "http://www.w3.org/2002/07/owl#InverseFunctionalProperty",
-          "http://www.w3.org/2002/07/owl#ObjectProperty"
+            "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property",
+            "http://www.w3.org/2002/07/owl#InverseFunctionalProperty",
+            "http://www.w3.org/2002/07/owl#ObjectProperty"
         ],
         "http://www.w3.org/2000/01/rdf-schema#comment": "A  personal mailbox, ie. an Internet mailbox associated with exactly one owner, the first owner of this mailbox. This is a 'static inverse functional property', in that  there is (across time and change) at most one individual that ever has any particular value for foaf:mbox.",
         "http://www.w3.org/2000/01/rdf-schema#domain": {
-          "@id": "https://w3id.org/user/Agent"
+            "@id": "https://w3id.org/user/Agent"
         },
         "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": {
-          "@id": "https://w3id.org/user/"
+            "@id": "https://w3id.org/user/"
         },
         "http://www.w3.org/2000/01/rdf-schema#label": "personal mailbox",
         "http://www.w3.org/2000/01/rdf-schema#range": {
-          "@id": "http://www.w3.org/2002/07/owl#Thing"
+            "@id": "http://www.w3.org/2002/07/owl#Thing"
         },
         "http://www.w3.org/2003/06/sw-vocab-status/ns#term_status": "stable"
-      },
-      {
+    },
+    {
         "@id": "https://w3id.org/user/member",
         "@type": [
-          "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property",
-          "http://www.w3.org/2002/07/owl#ObjectProperty"
+            "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property",
+            "http://www.w3.org/2002/07/owl#ObjectProperty"
         ],
         "http://www.w3.org/2000/01/rdf-schema#comment": "Indicates a member of a Group",
         "http://www.w3.org/2000/01/rdf-schema#domain": {
-          "@id": "https://w3id.org/user/Group"
+            "@id": "https://w3id.org/user/Group"
         },
         "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": {
-          "@id": "https://w3id.org/user/"
+            "@id": "https://w3id.org/user/"
         },
         "http://www.w3.org/2000/01/rdf-schema#label": "member",
         "http://www.w3.org/2000/01/rdf-schema#range": {
-          "@id": "https://w3id.org/user/Agent"
+            "@id": "https://w3id.org/user/Agent"
         },
         "http://www.w3.org/2003/06/sw-vocab-status/ns#term_status": "stable"
-      },
-      {
+    },
+    {
         "@id": "https://w3id.org/user/name",
         "@type": [
-          "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property",
-          "http://www.w3.org/2002/07/owl#DatatypeProperty"
+            "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property",
+            "http://www.w3.org/2002/07/owl#DatatypeProperty"
         ],
         "http://www.w3.org/2000/01/rdf-schema#comment": "A name for some thing.",
         "http://www.w3.org/2000/01/rdf-schema#domain": {
-          "@id": "http://www.w3.org/2002/07/owl#Thing"
+            "@id": "http://www.w3.org/2002/07/owl#Thing"
         },
         "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": {
-          "@id": "https://w3id.org/user/"
+            "@id": "https://w3id.org/user/"
         },
         "http://www.w3.org/2000/01/rdf-schema#label": "name",
         "http://www.w3.org/2000/01/rdf-schema#range": {
-          "@id": "http://www.w3.org/2000/01/rdf-schema#Literal"
+            "@id": "http://www.w3.org/2000/01/rdf-schema#Literal"
         },
         "http://www.w3.org/2000/01/rdf-schema#subPropertyOf": {
-          "@id": "http://www.w3.org/2000/01/rdf-schema#label"
+            "@id": "http://www.w3.org/2000/01/rdf-schema#label"
         },
         "http://www.w3.org/2003/06/sw-vocab-status/ns#term_status": "testing"
-      },
-      {
+    },
+    {
         "@id": "https://w3id.org/user/nick",
         "@type": [
-          "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property",
-          "http://www.w3.org/2002/07/owl#DatatypeProperty"
+            "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property",
+            "http://www.w3.org/2002/07/owl#DatatypeProperty"
         ],
         "http://www.w3.org/2000/01/rdf-schema#comment": "A short informal nickname characterising an agent (includes login identifiers, IRC and other chat nicknames).",
         "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": {
-          "@id": "https://w3id.org/user/"
+            "@id": "https://w3id.org/user/"
         },
         "http://www.w3.org/2000/01/rdf-schema#label": "nickname",
         "http://www.w3.org/2003/06/sw-vocab-status/ns#term_status": "testing"
-      },
-      {
+    },
+    {
         "@id": "https://w3id.org/user/openid",
         "@type": [
-          "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property",
-          "http://www.w3.org/2002/07/owl#InverseFunctionalProperty",
-          "http://www.w3.org/2002/07/owl#ObjectProperty"
+            "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property",
+            "http://www.w3.org/2002/07/owl#InverseFunctionalProperty",
+            "http://www.w3.org/2002/07/owl#ObjectProperty"
         ],
         "http://www.w3.org/2000/01/rdf-schema#comment": "An OpenID for an Agent.",
         "http://www.w3.org/2000/01/rdf-schema#domain": {
-          "@id": "https://w3id.org/user/Agent"
+            "@id": "https://w3id.org/user/Agent"
         },
         "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": {
-          "@id": "https://w3id.org/user/"
+            "@id": "https://w3id.org/user/"
         },
         "http://www.w3.org/2000/01/rdf-schema#label": "openid",
         "http://www.w3.org/2000/01/rdf-schema#range": {
-          "@id": "https://w3id.org/user/Document"
+            "@id": "https://w3id.org/user/Document"
         },
         "http://www.w3.org/2000/01/rdf-schema#subPropertyOf": {
-          "@id": "https://w3id.org/user/isPrimaryTopicOf"
+            "@id": "https://w3id.org/user/isPrimaryTopicOf"
         },
         "http://www.w3.org/2003/06/sw-vocab-status/ns#term_status": "testing"
-      },
-      {
+    },
+    {
         "@id": "https://w3id.org/user/phone",
         "@type": [
-          "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property",
-          "http://www.w3.org/2002/07/owl#ObjectProperty"
+            "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property",
+            "http://www.w3.org/2002/07/owl#ObjectProperty"
         ],
         "http://www.w3.org/2000/01/rdf-schema#comment": "A phone,  specified using fully qualified tel: URI scheme (refs: http://www.w3.org/Addressing/schemes.html#tel).",
         "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": {
-          "@id": "https://w3id.org/user/"
+            "@id": "https://w3id.org/user/"
         },
         "http://www.w3.org/2000/01/rdf-schema#label": "phone",
         "http://www.w3.org/2003/06/sw-vocab-status/ns#term_status": "testing"
-      },
-      {
+    },
+    {
         "@id": "https://w3id.org/user/primaryTopic",
         "@type": [
-          "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property",
-          "http://www.w3.org/2002/07/owl#FunctionalProperty",
-          "http://www.w3.org/2002/07/owl#ObjectProperty"
+            "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property",
+            "http://www.w3.org/2002/07/owl#FunctionalProperty",
+            "http://www.w3.org/2002/07/owl#ObjectProperty"
         ],
         "http://www.w3.org/2000/01/rdf-schema#comment": "The primary topic of some page or document.",
         "http://www.w3.org/2000/01/rdf-schema#domain": {
-          "@id": "https://w3id.org/user/Document"
+            "@id": "https://w3id.org/user/Document"
         },
         "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": {
-          "@id": "https://w3id.org/user/"
+            "@id": "https://w3id.org/user/"
         },
         "http://www.w3.org/2000/01/rdf-schema#label": "primary topic",
         "http://www.w3.org/2000/01/rdf-schema#range": {
-          "@id": "http://www.w3.org/2002/07/owl#Thing"
+            "@id": "http://www.w3.org/2002/07/owl#Thing"
         },
         "http://www.w3.org/2002/07/owl#inverseOf": {
-          "@id": "https://w3id.org/user/isPrimaryTopicOf"
+            "@id": "https://w3id.org/user/isPrimaryTopicOf"
         },
         "http://www.w3.org/2003/06/sw-vocab-status/ns#term_status": "stable"
-      },
-      {
+    },
+    {
         "@id": "https://w3id.org/user/skypeID",
         "@type": [
-          "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property",
-          "http://www.w3.org/2002/07/owl#DatatypeProperty"
+            "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property",
+            "http://www.w3.org/2002/07/owl#DatatypeProperty"
         ],
         "http://www.w3.org/2000/01/rdf-schema#comment": "A Skype ID",
         "http://www.w3.org/2000/01/rdf-schema#domain": {
-          "@id": "https://w3id.org/user/Agent"
+            "@id": "https://w3id.org/user/Agent"
         },
         "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": {
-          "@id": "https://w3id.org/user/"
+            "@id": "https://w3id.org/user/"
         },
         "http://www.w3.org/2000/01/rdf-schema#label": "Skype ID",
         "http://www.w3.org/2000/01/rdf-schema#range": {
-          "@id": "http://www.w3.org/2000/01/rdf-schema#Literal"
+            "@id": "http://www.w3.org/2000/01/rdf-schema#Literal"
         },
         "http://www.w3.org/2000/01/rdf-schema#subPropertyOf": {
-          "@id": "https://w3id.org/user/nick"
+            "@id": "https://w3id.org/user/nick"
         },
         "http://www.w3.org/2003/06/sw-vocab-status/ns#term_status": "testing"
-      },
-      {
+    },
+    {
         "@id": "https://w3id.org/user/sshpubkey",
         "@type": [
-          "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property",
-          "http://www.w3.org/2002/07/owl#DatatypeProperty",
-          "http://www.w3.org/2002/07/owl#FunctionalProperty"
+            "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property",
+            "http://www.w3.org/2002/07/owl#DatatypeProperty",
+            "http://www.w3.org/2002/07/owl#FunctionalProperty"
         ],
         "http://www.w3.org/2000/01/rdf-schema#comment": "The public sshpubkey of this Agent, represented in mm-dd string as per openSSH.",
         "http://www.w3.org/2000/01/rdf-schema#domain": {
-          "@id": "https://w3id.org/user/Agent"
+            "@id": "https://w3id.org/user/Agent"
         },
         "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": {
-          "@id": "https://w3id.org/user/"
+            "@id": "https://w3id.org/user/"
         },
         "http://www.w3.org/2000/01/rdf-schema#label": "sshpubkey",
         "http://www.w3.org/2000/01/rdf-schema#range": {
-          "@id": "http://www.w3.org/2000/01/rdf-schema#Literal"
+            "@id": "http://www.w3.org/2000/01/rdf-schema#Literal"
         },
         "http://www.w3.org/2003/06/sw-vocab-status/ns#term_status": "unstable"
-      },
-      {
+    },
+    {
         "@id": "https://w3id.org/user/status",
         "@type": [
-          "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property",
-          "http://www.w3.org/2002/07/owl#DatatypeProperty"
+            "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property",
+            "http://www.w3.org/2002/07/owl#DatatypeProperty"
         ],
         "http://www.w3.org/2000/01/rdf-schema#comment": "A string expressing what the user is happy for the general public (normally) to know about their current activity.",
         "http://www.w3.org/2000/01/rdf-schema#domain": {
-          "@id": "https://w3id.org/user/Agent"
+            "@id": "https://w3id.org/user/Agent"
         },
         "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": {
-          "@id": "https://w3id.org/user/"
+            "@id": "https://w3id.org/user/"
         },
         "http://www.w3.org/2000/01/rdf-schema#label": "status",
         "http://www.w3.org/2000/01/rdf-schema#range": {
-          "@id": "http://www.w3.org/2000/01/rdf-schema#Literal"
+            "@id": "http://www.w3.org/2000/01/rdf-schema#Literal"
         },
         "http://www.w3.org/2003/06/sw-vocab-status/ns#term_status": "unstable"
-      },
-      {
+    },
+    {
         "@id": "https://w3id.org/user/tipjar",
         "@type": [
-          "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property",
-          "http://www.w3.org/2002/07/owl#ObjectProperty"
+            "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property",
+            "http://www.w3.org/2002/07/owl#ObjectProperty"
         ],
         "http://www.w3.org/2000/01/rdf-schema#comment": "A tipjar document for this agent, describing means for payment and reward.",
         "http://www.w3.org/2000/01/rdf-schema#domain": {
-          "@id": "https://w3id.org/user/Agent"
+            "@id": "https://w3id.org/user/Agent"
         },
         "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": {
-          "@id": "https://w3id.org/user/"
+            "@id": "https://w3id.org/user/"
         },
         "http://www.w3.org/2000/01/rdf-schema#label": "tipjar",
         "http://www.w3.org/2000/01/rdf-schema#range": {
-          "@id": "https://w3id.org/user/Document"
+            "@id": "https://w3id.org/user/Document"
         },
         "http://www.w3.org/2000/01/rdf-schema#subPropertyOf": {
-          "@id": "https://w3id.org/user/page"
+            "@id": "https://w3id.org/user/page"
         },
         "http://www.w3.org/2003/06/sw-vocab-status/ns#term_status": "testing"
-      },
-      {
+    },
+    {
         "@id": "https://w3id.org/user/title",
         "@type": [
-          "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property",
-          "http://www.w3.org/2002/07/owl#DatatypeProperty"
+            "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property",
+            "http://www.w3.org/2002/07/owl#DatatypeProperty"
         ],
         "http://www.w3.org/2000/01/rdf-schema#comment": "Title (Mr, Mrs, Ms, Dr. etc)",
         "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": {
-          "@id": "https://w3id.org/user/"
+            "@id": "https://w3id.org/user/"
         },
         "http://www.w3.org/2000/01/rdf-schema#label": "title",
         "http://www.w3.org/2003/06/sw-vocab-status/ns#term_status": "testing"
-      }
-    ]
-  }
+    }
+]
