@@ -52,38 +52,6 @@
         "http://www.w3.org/2003/06/sw-vocab-status/ns#term_status": "stable"
     },
     {
-        "@id": "https://w3id.org/user/Image",
-        "@type": [
-            "http://www.w3.org/2000/01/rdf-schema#Class",
-            "http://www.w3.org/2002/07/owl#Class"
-        ],
-        "http://www.w3.org/2000/01/rdf-schema#comment": "An image.",
-        "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": {
-            "@id": "https://w3id.org/user/"
-        },
-        "http://www.w3.org/2000/01/rdf-schema#label": "Image",
-        "http://www.w3.org/2000/01/rdf-schema#subClassOf": {
-            "@id": "https://w3id.org/user/Document"
-        },
-        "http://www.w3.org/2002/07/owl#equivalentClass": {
-            "@id": "http://schema.org/ImageObject"
-        },
-        "http://www.w3.org/2003/06/sw-vocab-status/ns#term_status": "stable"
-    },
-    {
-        "@id": "https://w3id.org/user/LabelProperty",
-        "@type": [
-            "http://www.w3.org/2000/01/rdf-schema#Class",
-            "http://www.w3.org/2002/07/owl#Class"
-        ],
-        "http://www.w3.org/2000/01/rdf-schema#comment": "A foaf:LabelProperty is any RDF property with texual values that serve as labels.",
-        "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": {
-            "@id": "https://w3id.org/user/"
-        },
-        "http://www.w3.org/2000/01/rdf-schema#label": "Label Property",
-        "http://www.w3.org/2003/06/sw-vocab-status/ns#term_status": "unstable"
-    },
-    {
         "@id": "https://w3id.org/user/OnlineAccount",
         "@type": [
             "http://www.w3.org/2000/01/rdf-schema#Class",
@@ -171,27 +139,6 @@
         "http://www.w3.org/2000/01/rdf-schema#subClassOf": {
             "@id": "https://w3id.org/user/Document"
         },
-        "http://www.w3.org/2003/06/sw-vocab-status/ns#term_status": "testing"
-    },
-    {
-        "@id": "https://w3id.org/user/Project",
-        "@type": [
-            "http://www.w3.org/2000/01/rdf-schema#Class",
-            "http://www.w3.org/2002/07/owl#Class"
-        ],
-        "http://www.w3.org/2000/01/rdf-schema#comment": "A project (a collective endeavour of some kind).",
-        "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": {
-            "@id": "https://w3id.org/user/"
-        },
-        "http://www.w3.org/2000/01/rdf-schema#label": "Project",
-        "http://www.w3.org/2002/07/owl#disjointWith": [
-            {
-                "@id": "https://w3id.org/user/Document"
-            },
-            {
-                "@id": "https://w3id.org/user/Person"
-            }
-        ],
         "http://www.w3.org/2003/06/sw-vocab-status/ns#term_status": "testing"
     },
     {
@@ -292,28 +239,6 @@
         "http://www.w3.org/2003/06/sw-vocab-status/ns#term_status": "testing"
     },
     {
-        "@id": "https://w3id.org/user/depiction",
-        "@type": [
-            "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property",
-            "http://www.w3.org/2002/07/owl#ObjectProperty"
-        ],
-        "http://www.w3.org/2000/01/rdf-schema#comment": "A depiction of some thing.",
-        "http://www.w3.org/2000/01/rdf-schema#domain": {
-            "@id": "http://www.w3.org/2002/07/owl#Thing"
-        },
-        "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": {
-            "@id": "https://w3id.org/user/"
-        },
-        "http://www.w3.org/2000/01/rdf-schema#label": "depiction",
-        "http://www.w3.org/2000/01/rdf-schema#range": {
-            "@id": "https://w3id.org/user/Image"
-        },
-        "http://www.w3.org/2002/07/owl#inverseOf": {
-            "@id": "https://w3id.org/user/depicts"
-        },
-        "http://www.w3.org/2003/06/sw-vocab-status/ns#term_status": "testing"
-    },
-    {
         "@id": "https://w3id.org/user/depicts",
         "@type": [
             "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property",
@@ -354,19 +279,6 @@
             "@id": "http://www.w3.org/2000/01/rdf-schema#Literal"
         },
         "http://www.w3.org/2003/06/sw-vocab-status/ns#term_status": "testing"
-    },
-    {
-        "@id": "https://w3id.org/user/givenname",
-        "@type": [
-            "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property",
-            "http://www.w3.org/2002/07/owl#DatatypeProperty"
-        ],
-        "http://www.w3.org/2000/01/rdf-schema#comment": "The given name of some person.",
-        "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": {
-            "@id": "https://w3id.org/user/"
-        },
-        "http://www.w3.org/2000/01/rdf-schema#label": "Given name",
-        "http://www.w3.org/2003/06/sw-vocab-status/ns#term_status": "archaic"
     },
     {
         "@id": "https://w3id.org/user/github",
@@ -498,13 +410,13 @@
         "http://www.w3.org/2003/06/sw-vocab-status/ns#term_status": "stable"
     },
     {
-        "@id": "https://w3id.org/user/mbox",
+        "@id": "https://w3id.org/user/email",
         "@type": [
             "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property",
             "http://www.w3.org/2002/07/owl#InverseFunctionalProperty",
             "http://www.w3.org/2002/07/owl#ObjectProperty"
         ],
-        "http://www.w3.org/2000/01/rdf-schema#comment": "A  personal mailbox, ie. an Internet mailbox associated with exactly one owner, the first owner of this mailbox. This is a 'static inverse functional property', in that  there is (across time and change) at most one individual that ever has any particular value for foaf:mbox.",
+        "http://www.w3.org/2000/01/rdf-schema#comment": "A  personal mailbox, ie. an Internet mailbox associated with exactly one owner, the first owner of this mailbox. This is a 'static inverse functional property', in that  there is (across time and change) at most one individual that ever has any particular value for foaf:email.",
         "http://www.w3.org/2000/01/rdf-schema#domain": {
             "@id": "https://w3id.org/user/Agent"
         },
@@ -653,20 +565,20 @@
         "http://www.w3.org/2003/06/sw-vocab-status/ns#term_status": "testing"
     },
     {
-        "@id": "https://w3id.org/user/sshpubkey",
+        "@id": "https://w3id.org/user/ssh",
         "@type": [
             "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property",
             "http://www.w3.org/2002/07/owl#DatatypeProperty",
             "http://www.w3.org/2002/07/owl#FunctionalProperty"
         ],
-        "http://www.w3.org/2000/01/rdf-schema#comment": "The public sshpubkey of this Agent, represented in mm-dd string as per openSSH.",
+        "http://www.w3.org/2000/01/rdf-schema#comment": "The public ssh key of this Agent, represented in mm-dd string as per openSSH.",
         "http://www.w3.org/2000/01/rdf-schema#domain": {
             "@id": "https://w3id.org/user/Agent"
         },
         "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": {
             "@id": "https://w3id.org/user/"
         },
-        "http://www.w3.org/2000/01/rdf-schema#label": "sshpubkey",
+        "http://www.w3.org/2000/01/rdf-schema#label": "ssh",
         "http://www.w3.org/2000/01/rdf-schema#range": {
             "@id": "http://www.w3.org/2000/01/rdf-schema#Literal"
         },
