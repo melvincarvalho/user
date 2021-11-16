@@ -3,8 +3,8 @@
       {
         "@id": "https://w3id.org/user/",
         "@type": "http://www.w3.org/2002/07/owl#Ontology",
-        "http://purl.org/dc/elements/1.1/description": "The Friend of a Friend (FOAF) RDF vocabulary, described using W3C RDF Schema and the Web Ontology Language.",
-        "http://purl.org/dc/elements/1.1/title": "Friend of a Friend (FOAF) vocabulary"
+        "http://purl.org/dc/elements/1.1/description": "User vocabulary.",
+        "http://purl.org/dc/elements/1.1/title": "User vocabulary"
       },
       {
         "@id": "https://w3id.org/user/Agent",
