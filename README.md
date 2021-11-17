@@ -36,7 +36,7 @@ Linked Data User Vocab for Profiles
 
 ### Introduction
 
-User Vocab is a vocab for creating Linked Data Profiles.  It is self documenting and allows link following, search, and documentation
+[User Vocab](https://w3id.org/user) is a vocab for creating Linked Data Profiles.  It is self documenting and allows link following, search, and documentation
 
 ---
 
