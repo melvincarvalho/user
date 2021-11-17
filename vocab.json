@@ -281,6 +281,26 @@
         "http://www.w3.org/2003/06/sw-vocab-status/ns#term_status": "testing"
     },
     {
+        "@id": "https://w3id.org/user#genesis",
+        "@type": [
+            "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property",
+            "http://www.w3.org/2002/07/owl#DatatypeProperty",
+            "http://www.w3.org/2002/07/owl#FunctionalProperty"
+        ],
+        "http://www.w3.org/2000/01/rdf-schema#comment": "A genesis URI showing when the page was first created, this point to a git commit, for example.",
+        "http://www.w3.org/2000/01/rdf-schema#domain": {
+            "@id": "https://w3id.org/user#Document"
+        },
+        "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": {
+            "@id": "https://w3id.org/user#"
+        },
+        "http://www.w3.org/2000/01/rdf-schema#label": "genesis",
+        "http://www.w3.org/2000/01/rdf-schema#range": {
+            "@id": "http://www.w3.org/2000/01/rdf-schema#anyURI"
+        },
+        "http://www.w3.org/2003/06/sw-vocab-status/ns#term_status": "testing"
+    },
+    {
         "@id": "https://w3id.org/user#github",
         "@type": [
             "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property",
