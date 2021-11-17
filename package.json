@@ -1,0 +1,25 @@
+{
+  "name": "user-vocab",
+  "version": "0.0.1",
+  "description": "User Vocab for Linked Data Profile",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/melvincarvalho/user.git"
+  },
+  "keywords": [
+    "user",
+    "vocab",
+    "linked",
+    "data"
+  ],
+  "author": "Melvin Carvalho <https://melvincarvalho.com/#me> (melvincarvalho@gmail.com)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/melvincarvalho/user/issues"
+  },
+  "homepage": "https://github.com/melvincarvalho/user#readme"
+}
