@@ -16,9 +16,9 @@ Linked Data User Vocab for Profiles
 
 
 [![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
-[![npm](https://img.shields.io/npm/v/skill-user)](https://npmjs.com/package/skill-user)
-[![npm](https://img.shields.io/npm/dw/skill-user.svg)](https://npmjs.com/package/skill-user)
-[![Github Stars](https://img.shields.io/github/stars/melvincarvalho/skill-user.svg)](https://github.com/melvincarvalho/skill-user/)
+[![npm](https://img.shields.io/npm/v/user-vocab)](https://npmjs.com/package/user-vocab)
+[![npm](https://img.shields.io/npm/dw/user-vocab.svg)](https://npmjs.com/package/user-vocab)
+[![Github Stars](https://img.shields.io/github/stars/melvincarvalho/user.svg)](https://github.com/melvincarvalho/user/)
 
 
 ## ⚡️ Features
@@ -36,11 +36,11 @@ Linked Data User Vocab for Profiles
 
 ### Introduction
 
-user Vocab is a vocab for creating Linked Data Profile.  It is self documenting and allows link following, search, and documentation
+User Vocab is a vocab for creating Linked Data Profiles.  It is self documenting and allows link following, search, and documentation
 
 ---
 
 ## ⚖️ License
 
-This project is under the MIT License. See the [LICENSE](https://github.com/melvincarvalho/skill-user/blob/gh-pages/LICENSE) file for the full license text.
+This project is under the MIT License. See the [LICENSE](https://github.com/melvincarvalho/user/blob/gh-pages/LICENSE) file for the full license text.
 
