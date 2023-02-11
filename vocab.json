@@ -540,6 +540,52 @@
         "http://www.w3.org/2003/06/sw-vocab-status/ns#term_status": "testing"
     },
     {
+        "@id": "https://w3id.org/user#matrix",
+        "@type": [
+            "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property",
+            "http://www.w3.org/2002/07/owl#InverseFunctionalProperty",
+            "http://www.w3.org/2002/07/owl#ObjectProperty"
+        ],
+        "http://www.w3.org/2000/01/rdf-schema#comment": "A matrix account for an Agent. eg: ex: matrix:@melvster:matrix.org",
+        "http://www.w3.org/2000/01/rdf-schema#domain": {
+            "@id": "https://w3id.org/user#Agent"
+        },
+        "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": {
+            "@id": "https://w3id.org/user#"
+        },
+        "http://www.w3.org/2000/01/rdf-schema#label": "matrix",
+        "http://www.w3.org/2000/01/rdf-schema#range": {
+            "@id": "http://www.w3.org/2000/01/rdf-schema#anyURI"
+        },
+        "http://www.w3.org/2000/01/rdf-schema#subPropertyOf": {
+            "@id": "https://w3id.org/user#isPrimaryTopicOf"
+        },
+        "http://www.w3.org/2003/06/sw-vocab-status/ns#term_status": "testing"
+    },
+    {
+        "@id": "https://w3id.org/user#nostr",
+        "@type": [
+            "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property",
+            "http://www.w3.org/2002/07/owl#InverseFunctionalProperty",
+            "http://www.w3.org/2002/07/owl#ObjectProperty"
+        ],
+        "http://www.w3.org/2000/01/rdf-schema#comment": "A nostr account for an Agent.  ex: nostr:pubkey:<hex>",
+        "http://www.w3.org/2000/01/rdf-schema#domain": {
+            "@id": "https://w3id.org/user#Agent"
+        },
+        "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": {
+            "@id": "https://w3id.org/user#"
+        },
+        "http://www.w3.org/2000/01/rdf-schema#label": "nostr",
+        "http://www.w3.org/2000/01/rdf-schema#range": {
+            "@id": "http://www.w3.org/2000/01/rdf-schema#anyURI"
+        },
+        "http://www.w3.org/2000/01/rdf-schema#subPropertyOf": {
+            "@id": "https://w3id.org/user#isPrimaryTopicOf"
+        },
+        "http://www.w3.org/2003/06/sw-vocab-status/ns#term_status": "testing"
+    },
+    {
         "@id": "https://w3id.org/user#phone",
         "@type": [
             "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property",
