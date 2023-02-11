@@ -546,7 +546,7 @@
             "http://www.w3.org/2002/07/owl#InverseFunctionalProperty",
             "http://www.w3.org/2002/07/owl#ObjectProperty"
         ],
-        "http://www.w3.org/2000/01/rdf-schema#comment": "A matrix account for an Agent. eg: ex: matrix:@melvster:matrix.org",
+        "http://www.w3.org/2000/01/rdf-schema#comment": "A matrix account for an Agent. eg: ex: matrix:u/melvster:matrix.org",
         "http://www.w3.org/2000/01/rdf-schema#domain": {
             "@id": "https://w3id.org/user#Agent"
         },
@@ -569,7 +569,7 @@
             "http://www.w3.org/2002/07/owl#InverseFunctionalProperty",
             "http://www.w3.org/2002/07/owl#ObjectProperty"
         ],
-        "http://www.w3.org/2000/01/rdf-schema#comment": "A nostr account for an Agent.  ex: nostr:pubkey:<hex>",
+        "http://www.w3.org/2000/01/rdf-schema#comment": "A nostr account for an Agent.  ex: nostr:pubkey:hex",
         "http://www.w3.org/2000/01/rdf-schema#domain": {
             "@id": "https://w3id.org/user#Agent"
         },

@@ -1,6 +1,6 @@
 {
   "name": "user-vocab",
-  "version": "0.0.5",
+  "version": "0.0.6",
   "description": "User Vocab for Linked Data Profile",
   "main": "index.js",
   "scripts": {
