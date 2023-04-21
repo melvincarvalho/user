@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Nostr Vocabulary</title>
+    <title>User Vocabulary</title>
     <link href="./vocab.json" rel="alternate" type="application/json" />
     <link rel="stylesheet" href="./style.css" />
     <script type="application/ld+json" id="data">
@@ -612,6 +612,26 @@
             "@id": "https://w3id.org/user#isPrimaryTopicOf"
           },
           "http://www.w3.org/2003/06/sw-vocab-status/ns#term_status": "testing"
+        },
+        {
+          "@id": "https://w3id.org/user#alias",
+          "@type": [
+            "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property",
+            "http://www.w3.org/2002/07/owl#InverseFunctionalProperty",
+            "http://www.w3.org/2002/07/owl#ObjectProperty"
+          ],
+          "http://www.w3.org/2000/01/rdf-schema#comment": "Something that simply said two URIs refer to the same thing",
+          "http://www.w3.org/2000/01/rdf-schema#domain": {
+            "@id": "https://w3id.org/user#Agent"
+          },
+          "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": {
+            "@id": "https://w3id.org/user#"
+          },
+          "http://www.w3.org/2000/01/rdf-schema#label": "alias",
+          "http://www.w3.org/2000/01/rdf-schema#range": {
+            "@id": "http://www.w3.org/2000/01/rdf-schema#anyURI"
+          },
+          "http://www.w3.org/2003/06/sw-vocab-status/ns#term_status": "stable"
         },
         {
           "@id": "https://w3id.org/user#phone",
